@@ -56,7 +56,7 @@ function CourseDetailsCard({course , setConfirmationModal , handleBuyCourse}) {
         <div className={`flex flex-col gap-4 rounded-md bg-richblack-700 p-4 text-richblack-5`}>
             <img
                 src={ThumbnailImage}
-                 alt="Thumbnail Image "
+                 alt="Thumbnail"
                  className="max-h-[300px] min-h-[180px] w-[400px] overflow-hidden rounded-2xl object-cover md:max-w-full"     
                        />
             <div className="px-4">
@@ -79,7 +79,7 @@ function CourseDetailsCard({course , setConfirmationModal , handleBuyCourse}) {
                     </button>
 
                     {
-                        (!user || !course?. studentsEnrolled.includes(user?._id)) && (
+                        (!user || !course?.studentsEnrolled.includes(user?._id)) && (
                             <button onClick={handlerAddToCard} 
                             className='bg-yellow-25 text-black w-24 rounded-md '
                             > 

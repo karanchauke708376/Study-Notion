@@ -20,7 +20,7 @@ const RenderCartCourse = () => {
                 cart.map((course , index) => {
                     <div>
                         <div>
-                            <img src={course?.thumbnail} />
+                            <img src={course?.thumbnail}  alt="pic"/>
                             <div> 
                                 <p>{course?.courseName}</p>
                                 <p>{course?.category?.name} </p>
@@ -37,7 +37,7 @@ const RenderCartCourse = () => {
                                             fullIcon = {<BsStarFill/>}
                                      />
 
-                                     <span> {course?. ratingAndReviews?.length} Review Count  </span>
+                                     <span> {course?.ratingAndReviews?.length} Review Count  </span>
 
                                 </div>  
                             </div> 

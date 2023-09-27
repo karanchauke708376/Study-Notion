@@ -79,10 +79,10 @@ export default function CourseInformationForm()  {
             if(isFormUpdated()) 
             {
                  try{
-                    {
+                    
                         const currentValues = getValues();
                        
-        
+    
                         formData.append("courseId" , course._id);
                         if(currentValues.courseTitle !== course.courseName) {
                             formData.append("courseName" , data.courseTitle);
@@ -124,8 +124,8 @@ export default function CourseInformationForm()  {
                             dispatch(setStep(2));
                             dispatch(setCourse(result));
                         }
+                    
                     }
-                 }
                  catch(error) {
                      console.log("errror", error)
                  }
@@ -133,8 +133,8 @@ export default function CourseInformationForm()  {
             else {
                 toast.error("No Changes Made To The Form ");
             }
-            console.log("Printing Form Data 2 " , formData);
-            console.log("Printing Result 2 " , result);
+            // console.log("Printing Form Data 2 " , formData);
+            // console.log("Printing Result 2 " , result);
             return ;
         }
 
@@ -279,7 +279,7 @@ export default function CourseInformationForm()  {
                 register={register}
                 errors = {errors}
                 setValue={setValue}
-                editData={editCourse ? course?. thumbnail : null}
+                editData={editCourse ? course?.thumbnail : null}
 
                 />
           

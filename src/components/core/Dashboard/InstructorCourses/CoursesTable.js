@@ -67,7 +67,7 @@ export default function CoursesTable({courses , setCourses}) {
                 </Thead>
                 <Tbody>
                     {
-                        courses.length == 0 ? (
+                        courses.length === 0 ? (
                             <Tr>
                                 <Td className="py-10 text-center text-2xl font-medium text-richblack-5">
                                     No Courses Found

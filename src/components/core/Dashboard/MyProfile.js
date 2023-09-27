@@ -49,7 +49,7 @@ const MyProfile = () => {
                         ? "text-richblack-5"
                         : "text-richblack-400"
                     } text-sm font-medium`} >
-                    {user?. additionalDetails?.about ?? "Write Somethhing about Yourself " }
+                    {user?.additionalDetails?.about ?? "Write Somethhing about Yourself " }
                      </p>
             </div>
 

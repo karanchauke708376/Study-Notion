@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { get, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { createSubSection, updateSubSection } from "../../../../../services/operations/courseDetailsAPI";

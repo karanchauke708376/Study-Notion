@@ -8,7 +8,6 @@ import { setCourse, setEditCourse, setStep } from "../../../../../slices/courseS
 import { toast } from "react-hot-toast";
 import { updateSection,createSection } from "../../../../../services/operations/courseDetailsAPI";
 import NestedView from "./NestedView";
-import { BsCheckLg } from "react-icons/bs";
 const CourseBuilderForm = () => {
 
     // import 
