@@ -27,7 +27,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
     cors({
-        origin: "http://localhost:3000" ,
+        // origin: "http://localhost:3000" ,
+        origin: "*" ,
         credentials: true ,   // Aur Extra kya kya add kar sakta means credentials  ,
                               // Google Define -  the server allows cookies (or other user credentials) to be included on cross-origin requests.
 
